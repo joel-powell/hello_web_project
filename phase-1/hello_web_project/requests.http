@@ -1,0 +1,22 @@
+// 02_building_a_route
+// exercise
+GET http://localhost:9292/hello?name=Joel
+
+###
+
+// challenge
+POST http://localhost:9292/submit?name=Joel&message=Hello%20world
+
+###
+
+// 03_test_driving_a_route
+// exercise
+GET http://localhost:9292/names
+
+###
+
+// challenge
+POST http://localhost:9292/sort-names
+Content-Type: application/x-www-form-urlencoded
+
+names=Joe,Alice,Zoe,Julia,Kieran
