@@ -1,5 +1,4 @@
 require 'sinatra/base'
-require 'sinatra/reloader'
 
 class Application < Sinatra::Base
   get '/hello' do
