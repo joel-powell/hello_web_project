@@ -2,8 +2,7 @@ require 'sinatra/base'
 
 class Application < Sinatra::Base
   get '/hello' do
-    name = params[:name]
-    "Hello #{name}"
+    erb(:hello)
   end
 
   get '/names' do

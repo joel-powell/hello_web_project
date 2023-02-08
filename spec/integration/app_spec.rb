@@ -6,6 +6,23 @@ describe Application do
 
   let(:app) { Application.new }
 
+  context 'GET /hello' do
+    it 'returns the hello html file' do
+      response = get('/hello')
+
+      expected_response = <<~HTML.chomp
+        <html>
+        <head></head>
+        <body>
+        <h1>Hello!</h1>
+        </body>
+        </html>
+      HTML
+
+      expect(response.body).to include(expected_response)
+    end
+  end
+
   context 'GET /names' do
     it 'returns 200 OK' do
       response = get('/names')
